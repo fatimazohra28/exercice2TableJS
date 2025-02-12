@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      .sel {
+        background-color: rgb(234, 255, 0) !important;
+        color: #000 !important;
+      }
+    </style>
+  </head>
+  <body class="container my-3">
+    code : <input type="text" id="code" />
+    <hr />
+    nom : <input type="text" id="nom" />
+    <hr />
+    pre : <input type="text" id="pre" />
+    <hr />
+    sem : <input type="text" id="sem" />
+    <hr />
+    fil : <input type="text" id="fil" />
+    <hr />
+    <input
+      type="button"
+      class="btn btn-success"
+      id="btn"
+      value="Ajouter"
+      onclick="aj()"
+    />
+    <input type="button" class="btn btn-dark" id="btn" onclick="al()" value="Annuler" />
+    <br />
+    <table class="table table-bordered m-3">
+      <tr class="table table-dark">
+        <th>Code</th>
+        <th>nom</th>
+        <th>pre</th>
+        <th>sem</th>
+        <th>fil</th>
+      </tr>
+      <tbody id="content">
+
+      </tbody>
+    </table>
+    
+    <button class="btn btn-danger" onclick="sp()">Supprimer</button>
+    <script src="./src/ex.js">
+      
+    </script>
+  </body>
+</html>
